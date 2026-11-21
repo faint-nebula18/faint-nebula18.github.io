@@ -1,0 +1,1414 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>果冻传媒孟若羽 - 品牌官方视频门户|原创精品内容持续发布</title>
+<meta name="description" content="果冻传媒孟若羽官方网站，汇集品牌原创精品影像、创作者故事与企业动态，以专业内容生态与高清品质呈现真实温暖的影像表达，值得信赖的品牌视频门户。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e85d75'/%3E%3Ccircle cx='32' cy='30' r='14' fill='%23ffe1e7'/%3E%3Cpath d='M28 22l14 8-14 8z' fill='%23e85d75'/%3E%3C/svg%3E">
+<style>
+:root{
+  --brand:#e85d75;
+  --brand-deep:#b8385a;
+  --brand-soft:#fde7ec;
+  --ink:#241a20;
+  --ink-2:#5d4d55;
+  --line:#f0dde3;
+  --bg:#fffafb;
+  --bg-2:#fdf1f4;
+  --gold:#c9963b;
+  --shadow:0 12px 34px rgba(184,56,90,.10);
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:118px}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--bg);color:var(--ink);line-height:1.85;font-size:16px;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+input{font-family:inherit}
+ul,ol{list-style:none}
+
+/* 顶部吸顶组合 */
+.jdmry-sticky-wrap{position:sticky;top:0;z-index:80}
+.jdmry-announce{
+  background:linear-gradient(90deg,#2b1620,#4a2233 55%,#2b1620);
+  color:#ffe9ef;font-size:13.5px;
+  display:flex;align-items:center;justify-content:center;gap:14px;
+  padding:9px 46px 9px 18px;position:relative;
+}
+.jdmry-announce .jdmry-ann-tag{
+  background:var(--brand);color:#fff;border-radius:999px;
+  padding:1px 10px;font-size:12px;letter-spacing:.5px;flex:none;font-weight:600;
+}
+.jdmry-announce .jdmry-ann-text{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.jdmry-announce .jdmry-ann-close{
+  position:absolute;right:12px;top:50%;transform:translateY(-50%);
+  width:24px;height:24px;border-radius:50%;font-size:14px;line-height:1;
+  color:#ffd4df;background:rgba(255,255,255,.12);
+}
+.jdmry-announce .jdmry-ann-close:hover{background:rgba(255,255,255,.25)}
+.jdmry-header{
+  background:rgba(255,250,251,.94);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 4px 22px rgba(184,56,90,.05);
+}
+.jdmry-nav-inner{
+  max-width:1220px;margin:0 auto;padding:0 22px;
+  height:66px;display:flex;align-items:center;gap:22px;
+}
+.jdmry-logo{display:flex;align-items:center;gap:10px;flex:none}
+.jdmry-logo-mark{
+  width:38px;height:38px;border-radius:12px;
+  background:linear-gradient(140deg,var(--brand),var(--brand-deep));
+  display:grid;place-items:center;color:#fff;font-weight:800;font-size:17px;
+  box-shadow:0 6px 16px rgba(232,93,117,.35);letter-spacing:.5px;
+}
+.jdmry-logo-text{display:flex;flex-direction:column;line-height:1.2}
+.jdmry-logo-text b{font-size:16.5px;letter-spacing:1px}
+.jdmry-logo-text span{font-size:11px;color:var(--ink-2);letter-spacing:2.4px}
+.jdmry-nav-links{display:flex;align-items:center;gap:4px;margin-left:8px;flex-wrap:wrap}
+.jdmry-nav-links a{
+  font-size:14.5px;padding:7px 13px;border-radius:9px;color:var(--ink-2);
+  transition:.2s;white-space:nowrap;
+}
+.jdmry-nav-links a:hover,.jdmry-nav-links a.is-active{color:var(--brand-deep);background:var(--brand-soft);font-weight:600}
+.jdmry-search{position:relative;margin-left:auto;flex:none}
+.jdmry-search input{
+  width:212px;height:36px;border-radius:999px;border:1px solid var(--line);
+  background:#fff;padding:0 38px 0 15px;font-size:13.5px;color:var(--ink);
+  outline:none;transition:.25s;
+}
+.jdmry-search input:focus{border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft);width:246px}
+.jdmry-search-btn{
+  position:absolute;right:4px;top:4px;width:30px;height:28px;border-radius:999px;
+  background:var(--brand-soft);color:var(--brand-deep);font-size:13px;
+}
+.jdmry-search-btn:hover{background:var(--brand);color:#fff}
+.jdmry-search-hint{
+  position:absolute;top:44px;left:0;width:100%;background:#fff;border:1px solid var(--line);
+  border-radius:12px;box-shadow:var(--shadow);padding:8px;font-size:13px;color:var(--ink-2);
+  display:none;z-index:90;
+}
+.jdmry-search-hint.show{display:block}
+.jdmry-search-hint p{padding:6px 8px;border-radius:8px;cursor:pointer}
+.jdmry-search-hint p:hover{background:var(--brand-soft);color:var(--brand-deep)}
+.jdmry-burger{
+  display:none;width:40px;height:36px;border-radius:10px;border:1px solid var(--line);
+  background:#fff;margin-left:auto;align-items:center;justify-content:center;flex-direction:column;gap:4px;
+}
+.jdmry-burger span{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;transition:.25s}
+
+/* 通用容器 */
+.jdmry-wrap{max-width:1220px;margin:0 auto;padding:0 22px}
+.jdmry-sec{padding:66px 0 18px}
+.jdmry-sec-head{margin-bottom:28px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.jdmry-sec-title{font-size:27px;letter-spacing:.5px;line-height:1.35;position:relative;padding-left:16px}
+.jdmry-sec-title::before{
+  content:"";position:absolute;left:0;top:8px;bottom:8px;width:6px;border-radius:4px;
+  background:linear-gradient(180deg,var(--brand),var(--gold));
+}
+.jdmry-sec-sub{font-size:14px;color:var(--ink-2);max-width:560px;margin-top:6px}
+.jdmry-sec-more{font-size:13.5px;color:var(--brand-deep);border:1px solid var(--line);padding:7px 16px;border-radius:999px;background:#fff;transition:.2s;flex:none}
+.jdmry-sec-more:hover{background:var(--brand);color:#fff;border-color:var(--brand)}
+
+/* 首屏 */
+.jdmry-hero{position:relative;overflow:hidden;padding:56px 0 30px;background:
+  radial-gradient(900px 380px at 88% -8%,#ffe6ec 0%,transparent 62%),
+  radial-gradient(700px 300px at 4% 12%,#fdf3e0 0%,transparent 58%),var(--bg)}
+.jdmry-hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:52px;align-items:center}
+.jdmry-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);
+  border-radius:999px;padding:5px 15px 5px 6px;font-size:12.5px;color:var(--brand-deep);
+  font-weight:600;box-shadow:0 4px 14px rgba(184,56,90,.07);margin-bottom:18px;
+}
+.jdmry-hero-badge i{background:var(--brand);color:#fff;border-radius:999px;font-size:11px;font-style:normal;padding:2px 9px;letter-spacing:.5px}
+h1.jdmry-h1{
+  font-size:46px;line-height:1.22;letter-spacing:1px;font-weight:800;margin-bottom:6px;
+  background:linear-gradient(100deg,#2b1620 20%,var(--brand-deep) 92%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+}
+.jdmry-hero-slogan{font-size:17.5px;color:var(--brand-deep);font-weight:600;letter-spacing:.6px;margin:10px 0 16px}
+.jdmry-hero-intro{font-size:15px;color:var(--ink-2);max-width:560px}
+.jdmry-hero-acts{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.jdmry-btn{
+  display:inline-flex;align-items:center;gap:8px;padding:11px 24px;border-radius:999px;
+  font-size:14.5px;font-weight:600;transition:.22s;border:1px solid transparent;
+}
+.jdmry-btn-primary{background:linear-gradient(135deg,var(--brand),var(--brand-deep));color:#fff;box-shadow:0 10px 22px rgba(232,93,117,.3)}
+.jdmry-btn-primary:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(232,93,117,.4)}
+.jdmry-btn-ghost{background:#fff;color:var(--brand-deep);border-color:var(--line)}
+.jdmry-btn-ghost:hover{border-color:var(--brand);background:var(--brand-soft)}
+.jdmry-hero-stats{display:flex;gap:30px;margin-top:32px;flex-wrap:wrap}
+.jdmry-hero-stat b{display:block;font-size:26px;color:var(--brand-deep);letter-spacing:.5px;line-height:1.2}
+.jdmry-hero-stat span{font-size:12.5px;color:var(--ink-2);letter-spacing:.4px}
+.jdmry-hero-visual{position:relative}
+.jdmry-hero-cover{
+  border-radius:24px;overflow:hidden;box-shadow:0 26px 50px rgba(184,56,90,.18);
+  border:6px solid #fff;background:#fff;position:relative;
+}
+.jdmry-hero-cover img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.jdmry-hero-float{
+  position:absolute;left:-18px;bottom:26px;background:#fff;border-radius:16px;
+  padding:12px 16px;box-shadow:var(--shadow);border:1px solid var(--line);
+  display:flex;align-items:center;gap:10px;font-size:13px;
+}
+.jdmry-hero-float .jdmry-pulse{width:9px;height:9px;border-radius:50%;background:#3cc98a;box-shadow:0 0 0 4px rgba(60,201,138,.18)}
+.jdmry-hero-float b{color:var(--brand-deep);font-size:15px}
+.jdmry-hero-tagpill{
+  position:absolute;top:18px;right:18px;background:rgba(24,10,16,.62);color:#fff;
+  border-radius:999px;padding:5px 14px;font-size:12px;letter-spacing:1px;backdrop-filter:blur(6px);
+}
+
+/* 关键词解析 */
+.jdmry-about{background:linear-gradient(180deg,#fff 0%,var(--bg-2) 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:64px 0}
+.jdmry-about-inner{display:grid;grid-template-columns:.72fr 1.28fr;gap:46px;align-items:start}
+.jdmry-about-aside{position:sticky;top:130px}
+.jdmry-about-aside h2{font-size:26px;line-height:1.35;margin-bottom:14px}
+.jdmry-about-aside .jdmry-kw{
+  display:inline-block;background:#fff;border:1px dashed var(--brand);color:var(--brand-deep);
+  border-radius:10px;padding:3px 12px;font-size:13px;margin:0 6px 6px 0;
+}
+.jdmry-about-aside p{font-size:14px;color:var(--ink-2);margin-top:12px}
+.jdmry-about-body p{font-size:15px;color:#3e2f36;margin-bottom:15px;text-align:justify}
+.jdmry-about-body p strong{color:var(--brand-deep)}
+.jdmry-about-quote{
+  margin:22px 0;padding:18px 22px;border-left:4px solid var(--brand);
+  background:#fff;border-radius:0 14px 14px 0;font-size:14.5px;color:var(--ink-2);
+  box-shadow:0 8px 20px rgba(184,56,90,.05);
+}
+.jdmry-about-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:22px}
+.jdmry-about-cell{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.jdmry-about-cell b{display:block;font-size:14.5px;color:var(--brand-deep);margin-bottom:4px}
+.jdmry-about-cell span{font-size:13px;color:var(--ink-2)}
+
+/* 焦点视频 */
+.jdmry-focus-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:22px}
+.jdmry-focus-main{
+  position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--shadow);
+  min-height:380px;display:flex;align-items:flex-end;color:#fff;background:#2b1620;
+}
+.jdmry-focus-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.jdmry-focus-main:hover img{transform:scale(1.05)}
+.jdmry-focus-overlay{position:relative;z-index:2;width:100%;padding:26px;background:linear-gradient(180deg,transparent 8%,rgba(20,8,14,.78) 92%)}
+.jdmry-focus-overlay .jdmry-chip{background:var(--brand);color:#fff;font-size:12px;padding:3px 11px;border-radius:999px;display:inline-block;margin-bottom:10px;letter-spacing:.5px}
+.jdmry-focus-overlay h3{font-size:22px;line-height:1.4;margin-bottom:6px}
+.jdmry-focus-overlay p{font-size:13.5px;color:#e9d8de;max-width:520px}
+.jdmry-focus-meta{display:flex;gap:16px;font-size:12.5px;color:#f2dde4;margin-top:12px;flex-wrap:wrap}
+.jdmry-focus-side{display:grid;grid-template-rows:repeat(2,1fr);gap:18px}
+.jdmry-focus-mini{
+  display:grid;grid-template-columns:132px 1fr;gap:14px;background:#fff;border:1px solid var(--line);
+  border-radius:16px;padding:12px;transition:.22s;align-items:center;
+}
+.jdmry-focus-mini:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#f5c9d4}
+.jdmry-focus-mini img{border-radius:10px;aspect-ratio:16/10;object-fit:cover;width:100%}
+.jdmry-focus-mini h4{font-size:14.5px;line-height:1.5;margin-bottom:4px}
+.jdmry-focus-mini span{font-size:12.5px;color:var(--ink-2)}
+
+/* 视频流卡片 */
+.jdmry-filter-bar{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:24px}
+.jdmry-filter-bar button{
+  font-size:13px;padding:7px 16px;border-radius:999px;border:1px solid var(--line);
+  background:#fff;color:var(--ink-2);transition:.2s;
+}
+.jdmry-filter-bar button:hover{border-color:var(--brand);color:var(--brand-deep)}
+.jdmry-filter-bar button.is-on{background:var(--brand);color:#fff;border-color:var(--brand);font-weight:600}
+.jdmry-video-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.jdmry-vcard{
+  background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;
+  display:flex;flex-direction:column;transition:.25s;
+}
+.jdmry-vcard:hover{transform:translateY(-5px);box-shadow:0 18px 34px rgba(184,56,90,.13);border-color:#f3c3d0}
+.jdmry-vcard-cover{position:relative;overflow:hidden;background:#2b1620}
+.jdmry-vcard-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:transform .55s}
+.jdmry-vcard:hover .jdmry-vcard-cover img{transform:scale(1.06)}
+.jdmry-vcard-cat{
+  position:absolute;left:12px;top:12px;background:rgba(255,255,255,.92);
+  color:var(--brand-deep);font-size:11.5px;font-weight:600;padding:2px 10px;border-radius:999px;
+}
+.jdmry-vcard-dur{position:absolute;right:12px;bottom:12px;background:rgba(20,8,14,.72);color:#fff;font-size:11.5px;padding:2px 8px;border-radius:6px;letter-spacing:.5px}
+.jdmry-vcard-play{
+  position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.9);
+  width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.9);color:var(--brand-deep);
+  display:grid;place-items:center;font-size:16px;opacity:0;transition:.25s;
+}
+.jdmry-vcard:hover .jdmry-vcard-play{opacity:1;transform:translate(-50%,-50%) scale(1)}
+.jdmry-vcard-body{padding:15px 16px 16px;display:flex;flex-direction:column;flex:1}
+.jdmry-vcard-body h3{font-size:15.5px;line-height:1.5;margin-bottom:6px}
+.jdmry-vcard-body .jdmry-vdesc{font-size:12.8px;color:var(--ink-2);margin-bottom:10px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.jdmry-vcard-tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+.jdmry-vcard-tags span{font-size:11.5px;color:var(--brand-deep);background:var(--brand-soft);border-radius:6px;padding:1px 8px}
+.jdmry-vcard-foot{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:10px;border-top:1px dashed var(--line)}
+.jdmry-author{display:flex;align-items:center;gap:7px;font-size:12.5px;color:var(--ink-2);min-width:0}
+.jdmry-avatar{
+  width:26px;height:26px;border-radius:50%;display:grid;place-items:center;font-size:12px;
+  color:#fff;font-weight:700;flex:none;letter-spacing:.5px;
+}
+.jdmry-actions{display:flex;gap:4px}
+.jdmry-act{font-size:12.5px;color:var(--ink-2);padding:3px 7px;border-radius:8px;transition:.18s;display:inline-flex;align-items:center;gap:4px}
+.jdmry-act:hover{background:var(--brand-soft);color:var(--brand-deep)}
+.jdmry-act.is-liked{color:var(--brand);font-weight:700}
+.jdmry-act.is-saved{color:var(--gold);font-weight:700}
+
+/* 专题 */
+.jdmry-topic-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.jdmry-topic{
+  border-radius:18px;padding:20px;color:#fff;position:relative;overflow:hidden;min-height:186px;
+  display:flex;flex-direction:column;justify-content:flex-end;transition:.25s;
+}
+.jdmry-topic:hover{transform:translateY(-4px)}
+.jdmry-topic::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.06),rgba(0,0,0,.5));z-index:1}
+.jdmry-topic>*{position:relative;z-index:2}
+.jdmry-topic b{font-size:16.5px;line-height:1.45;margin-bottom:6px;display:block}
+.jdmry-topic span{font-size:12.5px;color:rgba(255,255,255,.86);line-height:1.6}
+.jdmry-topic em{font-style:normal;font-size:11.5px;background:rgba(255,255,255,.22);border-radius:999px;padding:2px 9px;align-self:flex-start;margin-bottom:9px}
+
+/* 创作者 */
+.jdmry-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.jdmry-creator{
+  background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px;text-align:center;
+  transition:.24s;display:flex;flex-direction:column;align-items:center;
+}
+.jdmry-creator:hover{box-shadow:var(--shadow);transform:translateY(-4px);border-color:#f3c3d0}
+.jdmry-creator .jdmry-avatar{width:62px;height:62px;font-size:22px;margin-bottom:10px;box-shadow:0 8px 18px rgba(184,56,90,.16)}
+.jdmry-creator b{font-size:15.5px}
+.jdmry-creator .jdmry-cfield{font-size:12px;color:var(--brand-deep);background:var(--brand-soft);border-radius:999px;padding:1px 10px;margin:7px 0 9px}
+.jdmry-creator p{font-size:12.8px;color:var(--ink-2);line-height:1.65;margin-bottom:12px}
+.jdmry-creator .jdmry-cdata{display:flex;gap:18px;font-size:12px;color:var(--ink-2);border-top:1px dashed var(--line);padding-top:10px;width:100%;justify-content:center}
+.jdmry-creator .jdmry-cdata b{font-size:13.5px;color:var(--ink);display:block;line-height:1.3}
+.jdmry-creator-more{margin-top:12px;font-size:12.5px;color:var(--brand-deep);font-weight:600}
+
+/* 故事随笔 */
+.jdmry-story{background:var(--bg-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:62px 0}
+.jdmry-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.jdmry-story-card{background:#fff;border-radius:18px;padding:24px 22px;border:1px solid var(--line);position:relative;transition:.22s}
+.jdmry-story-card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.jdmry-story-card .jdmry-story-num{font-size:36px;font-weight:800;color:var(--brand-soft);position:absolute;top:10px;right:18px;line-height:1;letter-spacing:1px}
+.jdmry-story-card h3{font-size:17px;line-height:1.5;margin-bottom:10px}
+.jdmry-story-card p{font-size:13.5px;color:var(--ink-2);line-height:1.85;margin-bottom:14px;text-align:justify}
+.jdmry-story-card .jdmry-story-sign{font-size:12.5px;color:var(--brand-deep);font-weight:600}
+
+/* 评论 */
+.jdmry-comment-grid{columns:3;column-gap:18px}
+.jdmry-comment{
+  break-inside:avoid;background:#fff;border:1px solid var(--line);border-radius:16px;
+  padding:16px 18px;margin-bottom:18px;transition:.22s;
+}
+.jdmry-comment:hover{border-color:#f3c3d0;box-shadow:0 10px 22px rgba(184,56,90,.08)}
+.jdmry-comment-head{display:flex;align-items:center;gap:9px;margin-bottom:8px}
+.jdmry-comment-head b{font-size:13.5px}
+.jdmry-comment-head span{font-size:11.5px;color:#9a8a91;margin-left:auto}
+.jdmry-comment p{font-size:13.2px;color:#4a3a42;line-height:1.8}
+.jdmry-comment .jdmry-cstars{color:var(--gold);font-size:12px;margin-bottom:4px;letter-spacing:2px}
+
+/* 作品墙 */
+.jdmry-wall{display:grid;grid-template-columns:repeat(6,1fr);grid-auto-rows:150px;gap:14px}
+.jdmry-wall-item{position:relative;border-radius:16px;overflow:hidden;background:#e9dfe3;cursor:pointer}
+.jdmry-wall-item img{width:100%;height:100%;object-fit:cover;transition:transform .55s}
+.jdmry-wall-item:hover img{transform:scale(1.07)}
+.jdmry-wall-item span{
+  position:absolute;left:12px;bottom:10px;color:#fff;font-size:12.5px;z-index:2;
+  text-shadow:0 1px 8px rgba(0,0,0,.6);font-weight:500;
+}
+.jdmry-wall-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(10,4,8,.6))}
+.jdmry-wall-big{grid-column:span 3;grid-row:span 2}
+.jdmry-wall-mid{grid-column:span 2;grid-row:span 1}
+.jdmry-wall-small{grid-column:span 1;grid-row:span 1}
+
+/* 榜单 + 灵感 */
+.jdmry-duo{display:grid;grid-template-columns:1.05fr .95fr;gap:22px}
+.jdmry-rank{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}
+.jdmry-rank h3{font-size:18px;margin-bottom:16px;display:flex;align-items:center;gap:8px}
+.jdmry-rank h3 em{font-style:normal;font-size:11.5px;background:var(--brand-soft);color:var(--brand-deep);border-radius:999px;padding:2px 9px;font-weight:600}
+.jdmry-rank li{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.jdmry-rank li:last-child{border-bottom:none}
+.jdmry-rank .jdmry-rank-no{width:22px;height:22px;border-radius:7px;display:grid;place-items:center;font-size:12px;background:var(--bg-2);color:var(--ink-2);font-weight:700;flex:none}
+.jdmry-rank li:nth-child(1) .jdmry-rank-no{background:var(--brand);color:#fff}
+.jdmry-rank li:nth-child(2) .jdmry-rank-no{background:#f2a7b8;color:#fff}
+.jdmry-rank li:nth-child(3) .jdmry-rank-no{background:#f8ccd6;color:var(--brand-deep)}
+.jdmry-rank li .jdmry-rank-name{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.jdmry-rank li .jdmry-rank-heat{font-size:12.5px;color:var(--brand-deep);flex:none}
+.jdmry-inspire{background:linear-gradient(150deg,#2b1620,#4a2233);color:#ffeef3;border-radius:20px;padding:24px;position:relative;overflow:hidden}
+.jdmry-inspire::before{content:"";position:absolute;right:-40px;top:-40px;width:170px;height:170px;border-radius:50%;background:rgba(232,93,117,.25);filter:blur(8px)}
+.jdmry-inspire h3{font-size:18px;margin-bottom:6px;position:relative}
+.jdmry-inspire>p{font-size:13px;color:#e6c6d1;margin-bottom:16px;position:relative}
+.jdmry-inspire-row{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:12px;padding:11px 14px;margin-bottom:10px;font-size:13.2px;display:flex;gap:10px;align-items:flex-start;position:relative;transition:.2s}
+.jdmry-inspire-row:hover{background:rgba(255,255,255,.13)}
+.jdmry-inspire-row i{font-style:normal;color:#ffb9c9;flex:none}
+.jdmry-inspire-btn{margin-top:6px;width:100%;justify-content:center;position:relative}
+
+/* 动态 / FAQ */
+.jdmry-dyn-faq{display:grid;grid-template-columns:.92fr 1.08fr;gap:26px;align-items:start}
+.jdmry-dyn{background:#fff;border:1px solid var(--line);border-radius:20px;padding:24px}
+.jdmry-dyn li{position:relative;padding:0 0 18px 20px;border-left:2px solid var(--brand-soft);margin-left:4px}
+.jdmry-dyn li:last-child{padding-bottom:0}
+.jdmry-dyn li::before{content:"";position:absolute;left:-6px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px #fff}
+.jdmry-dyn .jdmry-dyn-date{font-size:11.5px;color:#9a8a91;letter-spacing:.6px}
+.jdmry-dyn b{display:block;font-size:14.5px;margin:2px 0 3px}
+.jdmry-dyn p{font-size:13px;color:var(--ink-2);line-height:1.75}
+.jdmry-faq details{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:11px;overflow:hidden;transition:.2s}
+.jdmry-faq details[open]{border-color:#f3c3d0;box-shadow:0 8px 20px rgba(184,56,90,.07)}
+.jdmry-faq summary{padding:14px 18px;font-size:14.5px;font-weight:600;cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center}
+.jdmry-faq summary::-webkit-details-marker{display:none}
+.jdmry-faq summary::after{content:"+";color:var(--brand);font-size:19px;font-weight:400;flex:none;transition:.2s}
+.jdmry-faq details[open] summary::after{content:"−"}
+.jdmry-faq .jdmry-faq-body{padding:0 18px 15px;font-size:13.3px;color:var(--ink-2);line-height:1.85}
+
+/* 联系 / 合作 */
+.jdmry-contact{
+  background:linear-gradient(120deg,#fff 0%,var(--brand-soft) 100%);
+  border:1px solid var(--line);border-radius:24px;padding:38px;display:grid;
+  grid-template-columns:1.15fr .85fr;gap:34px;align-items:center;
+}
+.jdmry-contact h2{font-size:26px;line-height:1.4;margin-bottom:12px}
+.jdmry-contact p{font-size:14px;color:var(--ink-2);margin-bottom:8px}
+.jdmry-contact-acts{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.jdmry-contact-card{background:#fff;border-radius:18px;padding:22px;border:1px solid var(--line)}
+.jdmry-contact-card h3{font-size:15.5px;margin-bottom:12px}
+.jdmry-contact-card dl{font-size:13.5px;color:var(--ink-2);display:grid;grid-template-columns:auto 1fr;gap:8px 14px}
+.jdmry-contact-card dt{color:#9a8a91}
+.jdmry-contact-card dd{color:var(--ink);font-weight:500}
+
+/* 合作伙伴 */
+.jdmry-partner{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+.jdmry-partner div{
+  background:#fff;border:1px solid var(--line);border-radius:14px;padding:18px 10px;
+  text-align:center;font-size:13.5px;color:var(--ink-2);font-weight:600;letter-spacing:.5px;transition:.2s;
+}
+.jdmry-partner div:hover{color:var(--brand-deep);border-color:#f3c3d0;transform:translateY(-2px)}
+
+/* 页脚 */
+.jdmry-footer{background:#22141b;color:#e8d6dd;margin-top:66px;padding:52px 0 26px;font-size:13.5px}
+.jdmry-footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:34px}
+.jdmry-footer h4{font-size:14.5px;color:#fff;margin-bottom:13px;letter-spacing:.5px}
+.jdmry-footer p{color:#bda5ae;line-height:1.9;font-size:13px}
+.jdmry-footer li{margin-bottom:8px}
+.jdmry-footer li a{color:#bda5ae;transition:.2s}
+.jdmry-footer li a:hover{color:var(--brand)}
+.jdmry-footer .jdmry-foot-logo{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.jdmry-footer .jdmry-foot-logo .jdmry-logo-mark{box-shadow:none}
+.jdmry-footer .jdmry-foot-logo b{color:#fff;font-size:16px;letter-spacing:1px}
+.jdmry-footer-bottom{border-top:1px solid #3a252f;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#9d848e;font-size:12.5px}
+
+/* Toast & 回到顶部 */
+.jdmry-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:#2b1620;color:#ffeef3;font-size:13.5px;padding:10px 22px;border-radius:999px;
+  box-shadow:0 12px 30px rgba(43,22,32,.35);opacity:0;pointer-events:none;transition:.3s;z-index:200;
+}
+.jdmry-toast.show{opacity:1;transform:translate(-50%,0)}
+.jdmry-top{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--brand);color:#fff;display:grid;place-items:center;font-size:16px;
+  box-shadow:0 10px 24px rgba(232,93,117,.4);opacity:0;pointer-events:none;transition:.28s;z-index:150;
+}
+.jdmry-top.show{opacity:1;pointer-events:auto}
+.jdmry-top:hover{background:var(--brand-deep)}
+
+/* 弹窗 */
+.jdmry-modal{
+  position:fixed;inset:0;background:rgba(30,14,21,.55);backdrop-filter:blur(4px);
+  display:none;align-items:center;justify-content:center;padding:20px;z-index:300;
+}
+.jdmry-modal.show{display:flex}
+.jdmry-modal-box{
+  background:#fff;border-radius:20px;max-width:460px;width:100%;padding:26px;
+  box-shadow:0 30px 60px rgba(30,14,21,.3);position:relative;
+}
+.jdmry-modal-box h3{font-size:19px;margin-bottom:8px}
+.jdmry-modal-box p{font-size:13.5px;color:var(--ink-2);margin-bottom:16px;line-height:1.8}
+.jdmry-modal-close{position:absolute;right:14px;top:12px;font-size:18px;color:#9a8a91;width:28px;height:28px;border-radius:50%}
+.jdmry-modal-close:hover{background:var(--bg-2);color:var(--brand-deep)}
+.jdmry-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.jdmry-share-row button{flex:1;min-width:88px;padding:9px 0;border-radius:10px;background:var(--bg-2);font-size:13px;color:var(--ink);border:1px solid var(--line);transition:.2s}
+.jdmry-share-row button:hover{background:var(--brand-soft);color:var(--brand-deep);border-color:#f3c3d0}
+.jdmry-modal-field{width:100%;border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-size:13.5px;margin-bottom:12px;outline:none}
+.jdmry-modal-field:focus{border-color:var(--brand);box-shadow:0 0 0 3px var(--brand-soft)}
+textarea.jdmry-modal-field{resize:vertical;min-height:82px}
+
+/* 响应式 */
+@media (max-width:1080px){
+  .jdmry-hero-grid{grid-template-columns:1fr;gap:32px}
+  .jdmry-about-inner{grid-template-columns:1fr}
+  .jdmry-about-aside{position:static}
+  .jdmry-focus-grid{grid-template-columns:1fr}
+  .jdmry-focus-side{grid-template-rows:auto auto}
+  .jdmry-video-grid{grid-template-columns:repeat(2,1fr)}
+  .jdmry-topic-grid,.jdmry-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .jdmry-story-grid{grid-template-columns:1fr 1fr}
+  .jdmry-comment-grid{columns:2}
+  .jdmry-duo{grid-template-columns:1fr}
+  .jdmry-dyn-faq{grid-template-columns:1fr}
+  .jdmry-contact{grid-template-columns:1fr}
+  .jdmry-footer-grid{grid-template-columns:1fr 1fr}
+  .jdmry-partner{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:820px){
+  html{scroll-padding-top:104px}
+  .jdmry-nav-links{display:none}
+  .jdmry-burger{display:flex}
+  .jdmry-search{display:none}
+  .jdmry-header.jdmry-mobile-open .jdmry-nav-links{
+    display:flex;flex-direction:column;align-items:stretch;position:absolute;
+    top:100%;left:0;right:0;background:#fff;padding:14px 20px 20px;
+    border-bottom:1px solid var(--line);box-shadow:0 18px 30px rgba(184,56,90,.1);gap:2px;
+  }
+  .jdmry-nav-inner{position:relative}
+  h1.jdmry-h1{font-size:34px}
+  .jdmry-wall{grid-template-columns:repeat(4,1fr);grid-auto-rows:130px}
+  .jdmry-wall-big{grid-column:span 2;grid-row:span 2}
+}
+@media (max-width:600px){
+  .jdmry-wrap{padding:0 16px}
+  .jdmry-sec{padding:48px 0 12px}
+  .jdmry-video-grid,.jdmry-topic-grid,.jdmry-creator-grid,.jdmry-story-grid{grid-template-columns:1fr}
+  .jdmry-comment-grid{columns:1}
+  .jdmry-about-grid{grid-template-columns:1fr}
+  .jdmry-partner{grid-template-columns:repeat(2,1fr)}
+  .jdmry-footer-grid{grid-template-columns:1fr}
+  h1.jdmry-h1{font-size:29px}
+  .jdmry-sec-title{font-size:22px}
+  .jdmry-hero-stats{gap:18px}
+  .jdmry-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:120px}
+  .jdmry-focus-mini{grid-template-columns:104px 1fr}
+  .jdmry-contact{padding:24px}
+  .jdmry-announce{font-size:12px;padding-right:40px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="jdmry-sticky-wrap">
+  <div class="jdmry-announce" id="jdmryAnnounce">
+    <span class="jdmry-ann-tag">官方发布</span>
+    <span class="jdmry-ann-text">「果冻传媒孟若羽」11月新片单更新：《城市微光》纪录特辑上线，冬日影像企划同步开启报名</span>
+    <button class="jdmry-ann-close" type="button" aria-label="关闭公告" onclick="document.getElementById('jdmryAnnounce').style.display='none'">✕</button>
+  </div>
+  <header class="jdmry-header" id="jdmryHeader">
+    <div class="jdmry-nav-inner">
+      <a class="jdmry-logo" href="#jdmryHome" aria-label="果冻传媒孟若羽官方首页">
+        <span class="jdmry-logo-mark">果</span>
+        <span class="jdmry-logo-text"><b>果冻传媒孟若羽</b><span>JELLY BRAND OFFICIAL</span></span>
+      </a>
+      <nav class="jdmry-nav-links" aria-label="主导航">
+        <a href="#jdmryHome" class="is-active">首页</a>
+        <a href="#jdmryFocus">视频焦点</a>
+        <a href="#jdmryTopics">专题企划</a>
+        <a href="#jdmryCreators">创作者</a>
+        <a href="#jdmryStory">品牌故事</a>
+        <a href="#jdmryDynamics">企业动态</a>
+        <a href="#jdmryFaq">帮助</a>
+        <a href="#jdmryContact">联系</a>
+      </nav>
+      <div class="jdmry-search">
+        <input type="text" id="jdmrySearchInput" placeholder="搜索作品、创作者或专题" aria-label="站内搜索">
+        <button class="jdmry-search-btn" type="button" aria-label="搜索" onclick="jdmryDoSearch()">🔍</button>
+        <div class="jdmry-search-hint" id="jdmrySearchHint">
+          <p onclick="jdmryQuickSearch('城市微光')">城市微光 · 纪录特辑</p>
+          <p onclick="jdmryQuickSearch('孟若羽')">孟若羽 · 创作者档案</p>
+          <p onclick="jdmryQuickSearch('冬日影像')">冬日影像企划 · 征集中</p>
+          <p onclick="jdmryQuickSearch('幕后')">创作幕后 · 拍摄手记</p>
+        </div>
+      </div>
+      <button class="jdmry-burger" type="button" id="jdmryBurger" aria-label="展开导航菜单"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+</div>
+
+<main>
+
+<!-- 首屏 -->
+<section class="jdmry-hero" id="jdmryHome">
+  <div class="jdmry-wrap jdmry-hero-grid">
+    <div>
+      <div class="jdmry-hero-badge"><i>官方网站</i>果冻传媒孟若羽 · 品牌视频门户</div>
+      <h1 class="jdmry-h1">果冻传媒孟若羽</h1>
+      <p class="jdmry-hero-slogan">以真实影像，记录每一段值得被看见的日常</p>
+      <p class="jdmry-hero-intro">
+        作为深耕原创影像的品牌企业，果冻传媒孟若羽官方网站持续为创作者与观众搭建高品质内容生态。平台以专业制作标准、高清影像品质与温暖叙事视角，聚焦城市生活、人物故事与创作幕后，坚持正版原创、用户至上，让每一部作品都具备可被反复品读的力量。我们相信，好的影像来自真实，也终将回到人群之中。
+      </p>
+      <div class="jdmry-hero-acts">
+        <a class="jdmry-btn jdmry-btn-primary" href="#jdmryFocus">浏览视频焦点</a>
+        <a class="jdmry-btn jdmry-btn-ghost" href="#jdmryCreator">查看创作者矩阵</a>
+        <button class="jdmry-btn jdmry-btn-ghost" type="button" onclick="jdmryOpenModal('submit')">投稿入口</button>
+      </div>
+      <div class="jdmry-hero-stats">
+        <div class="jdmry-hero-stat"><b data-count="1286">0</b><span>原创作品累计</span></div>
+        <div class="jdmry-hero-stat"><b data-count="92">0</b><span>签约创作者（位）</span></div>
+        <div class="jdmry-hero-stat"><b data-count="460">0</b><span>内容专题（期）</span></div>
+      </div>
+    </div>
+    <div class="jdmry-hero-visual">
+      <div class="jdmry-hero-cover">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%232b1620'/%3E%3Cstop offset='0.55' stop-color='%237a3350'/%3E%3Cstop offset='1' stop-color='%23e85d75'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23g1)'/%3E%3Ccircle cx='620' cy='120' r='90' fill='%23ffd9e2' opacity='0.22'/%3E%3Ccircle cx='150' cy='430' r='130' fill='%23ffb3c6' opacity='0.15'/%3E%3Cpath d='M0 400 Q200 320 400 400 T800 380 L800 550 L0 550Z' fill='%23fde7ec' opacity='0.14'/%3E%3Cg transform='translate(400 275)'%3E%3Ccircle r='54' fill='%23fff' opacity='0.92'/%3E%3Cpath d='M-14 -24 L30 0 L-14 24Z' fill='%23b8385a'/%3E%3C/g%3E%3Cg fill='%23ffe9ef' opacity='0.9'%3E%3Crect x='60' y='64' width='168' height='9' rx='4'/%3E%3Crect x='60' y='88' width='108' height='7' rx='3' opacity='0.6'/%3E%3C/g%3E%3Ctext x='60' y='512' font-family='sans-serif' font-size='22' fill='%23ffe9ef' opacity='0.92'%3E果冻传媒孟若羽 · 品牌主视觉%3C/text%3E%3C/svg%3E" alt="果冻传媒孟若羽品牌形象主视觉封面">
+        <span class="jdmry-hero-tagpill">品牌主视觉</span>
+      </div>
+      <div class="jdmry-hero-float"><span class="jdmry-pulse"></span>本周新增影像 <b>18</b> 部 · 持续更新</div>
+    </div>
+  </div>
+</section>
+
+<!-- 关键词介绍与解析 -->
+<section class="jdmry-about">
+  <div class="jdmry-wrap jdmry-about-inner">
+    <aside class="jdmry-about-aside">
+      <h2>关于果冻传媒孟若羽</h2>
+      <div>
+        <span class="jdmry-kw">原创影像</span>
+        <span class="jdmry-kw">品牌门户</span>
+        <span class="jdmry-kw">人物纪录片</span>
+        <span class="jdmry-kw">城市生活</span>
+        <span class="jdmry-kw">创作者社区</span>
+        <span class="jdmry-kw">创作幕后</span>
+      </div>
+      <p>一个以真实为起点、以专业为方法的品牌内容平台，持续输出可被看见、被记住、被讨论的精品影像。</p>
+    </aside>
+    <div class="jdmry-about-body">
+      <p><strong>果冻传媒孟若羽</strong>并不是一个单点式的名字，而是一个由品牌、创作者与观众共同组成的影像生态。作为官方网站，我们把“果冻传媒孟若羽”理解为一种持续的创作态度：柔软但有韧性，鲜活而有分寸。品牌自成立以来，围绕城市生活、人物访谈、日常记录与创作幕后四条主线展开内容布局，逐步形成从选题策划、拍摄制作、正版分发到社区互动的完整链路。我们并不追求单一的爆款，而是更看重内容生态的长期健康——一部长片背后，往往有十几条短内容、数篇拍摄手记和一场线上讨论在共同支撑。</p>
+      <p>在内容品质上，果冻传媒孟若羽坚持以专业影像标准要求自己：画幅、调色、声音设计与字幕规范统一，重要作品均由品牌制作团队与签约创作者协同完成。高清只是底线，叙事才是核心。我们鼓励创作者把镜头对准真实的人与真实的生活——菜市场清晨的第一盏灯、深夜写字楼里最后熄灭的一扇窗、老城区一间开了二十年的修补铺，这些细碎的日常构成了品牌影像的底色。也正因如此，果冻传媒孟若羽的作品往往带着可触摸的温度，而不是悬浮的精致。</p>
+      <div class="jdmry-about-quote">“我们希望观众记住的不是某个炫技镜头，而是镜头里那个人抬眼看世界的一瞬间。”——品牌内容团队创作手记</div>
+      <p>作为一家持续运营的企业，果冻传媒孟若羽在创作者扶持上投入了长期资源。品牌设有面向新人的创作基金与季度企划，从脚本打磨、拍摄指导到后期审片提供全流程陪伴；同时开放品牌素材库与设备支持，降低年轻创作者的入行门槛。过去一段时间里，多位签约创作者从单条短片起步，逐步拥有了自己的系列栏目与稳定观众群。平台相信，创作者的成长就是内容生态的成长——这也是果冻传媒孟若羽在行业观察中被反复提及的原因之一。</p>
+      <p>在社区层面，果冻传媒孟若羽更愿意做一个“有耐心”的平台。我们不鼓励以时长与数量堆砌热度，而是通过专题企划、作者访谈、观众投票与线下放映等形式，让优质内容获得更长的生命周期。每期专题都会配套创作灵感清单与剪辑思路拆解，供投稿者参考；每一次征集都会公示评审维度与进度，让过程本身也成为可被信任的一部分。用户至上不是一句口号，它体现在每一条评论的回复、每一次争议的处理与每一版播放体验的优化里。</p>
+      <p>面向未来，果冻传媒孟若羽将继续在垂直领域深耕：一方面稳固人物纪实与城市影像的内容优势，另一方面拓展影像教育、跨界合作与青年创作者培养计划。我们希望官方网站不只是一个作品陈列页，而是品牌与观众之间真实发生交流的地方——你能在这里看到新片、读到故事、找到同好，也能把自己的作品放进来，成为内容生态的一部分。这既是果冻传媒孟若羽的现在，也是我们想共同抵达的以后。</p>
+      <div class="jdmry-about-grid">
+        <div class="jdmry-about-cell"><b>原创优先</b><span>所有上架内容均经版权核验，坚持正版与原创双标准。</span></div>
+        <div class="jdmry-about-cell"><b>专业制作</b><span>统一影像规范与审片流程，保障观看与创作的双向品质。</span></div>
+        <div class="jdmry-about-cell"><b>创作者陪伴</b><span>从脚本到成片的全流程支持，让新人也能完成完整表达。</span></div>
+        <div class="jdmry-about-cell"><b>社区共创</b><span>专题征集、观众投票与线下放映，让内容回到人群。</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 视频焦点 -->
+<section class="jdmry-sec" id="jdmryFocus">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">视频焦点</h2>
+        <p class="jdmry-sec-sub">编辑部本周重点推荐：从城市夜色到人物内心，果冻传媒孟若羽用影像留住正在发生的生活。</p>
+      </div>
+      <a class="jdmry-sec-more" href="#jdmryFeed">查看全部作品</a>
+    </div>
+    <div class="jdmry-focus-grid">
+      <article class="jdmry-focus-main">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 480'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%231b2438'/%3E%3Cstop offset='0.5' stop-color='%233a4a75'/%3E%3Cstop offset='1' stop-color='%23e8a1b4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='760' height='480' fill='url(%23f1)'/%3E%3Cg fill='%23f5dfe7'%3E%3Crect x='70' y='300' width='46' height='120' opacity='0.8'/%3E%3Crect x='130' y='250' width='38' height='170' opacity='0.65'/%3E%3Crect x='182' y='320' width='52' height='100' opacity='0.75'/%3E%3Crect x='248' y='210' width='34' height='210' opacity='0.55'/%3E%3Crect x='600' y='270' width='48' height='150' opacity='0.7'/%3E%3Crect x='660' y='330' width='40' height='90' opacity='0.6'/%3E%3C/g%3E%3Cg fill='%23ffe9c9' opacity='0.85'%3E%3Ccircle cx='300' cy='200' r='5'/%3E%3Ccircle cx='365' cy='165' r='4'/%3E%3Ccircle cx='430' cy='205' r='5'/%3E%3Ccircle cx='500' cy='150' r='4'/%3E%3Ccircle cx='555' cy='198' r='5'/%3E%3C/g%3E%3Cpath d='M0 400 Q190 350 380 405 T760 390 L760 480 L0 480Z' fill='%232b1620' opacity='0.55'/%3E%3C/svg%3E" alt="城市微光纪录特辑夜空下的街景主图">
+        <div class="jdmry-focus-overlay">
+          <span class="jdmry-chip">本周焦点</span>
+          <h3>《城市微光》：在夜班与清晨之间，记录六位普通人的一天</h3>
+          <p>摄制组用四个月时间跟拍夜班护士、早餐摊主、值守保安、代驾司机、便利店店员与早班公交司机，以平行剪辑呈现城市运转的隐形秩序。</p>
+          <div class="jdmry-focus-meta"><span>果冻传媒孟若羽 出品</span><span>纪录特辑 · 42 分钟</span><span>更新于 2026-11-16</span></div>
+        </div>
+      </article>
+      <div class="jdmry-focus-side">
+        <article class="jdmry-focus-mini">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23f6e7d8'/%3E%3Ccircle cx='240' cy='58' r='34' fill='%23e8a76a' opacity='0.85'/%3E%3Cpath d='M0 150 L90 96 L170 152 L250 110 L320 150 L320 200 L0 200Z' fill='%23b47b52' opacity='0.7'/%3E%3Ccircle cx='90' cy='82' r='20' fill='%23fff3e2'/%3E%3Ctext x='20' y='40' font-family='sans-serif' font-size='16' fill='%236b4a33'%3E手作早餐%3C/text%3E%3C/svg%3E" alt="早餐摊主手作烹饪过程封面">
+          <div>
+            <h4>一碗面里的二十年：老城早餐摊的一天</h4>
+            <span>日常记录 · 18 分钟</span>
+          </div>
+        </article>
+        <article class="jdmry-focus-mini">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 200'%3E%3Crect width='320' height='200' fill='%23dfe7f4'/%3E%3Crect x='36' y='60' width='88' height='90' rx='8' fill='%23ffffff' opacity='0.8'/%3E%3Crect x='140' y='42' width='60' height='108' rx='6' fill='%239db4d8'/%3E%3Ccircle cx='250' cy='80' r='30' fill='%23ffffff' opacity='0.65'/%3E%3Cpath d='M30 168 h260' stroke='%237b93b8' stroke-width='4' stroke-linecap='round'/%3E%3Ctext x='20' y='34' font-family='sans-serif' font-size='16' fill='%233d5273'%3E剪辑手记%3C/text%3E%3C/svg%3E" alt="创作幕后剪辑手记工作台封面">
+          <div>
+            <h4>剪辑台前的七十二小时：一条短片的诞生过程</h4>
+            <span>创作幕后 · 24 分钟</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 视频流 -->
+<section class="jdmry-sec" id="jdmryFeed">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">热门视频流</h2>
+        <p class="jdmry-sec-sub">按兴趣筛选你关心的题材，果冻传媒孟若羽的精品内容持续上新。</p>
+      </div>
+    </div>
+    <div class="jdmry-filter-bar" id="jdmryFilterBar">
+      <button type="button" class="is-on" data-cat="all">全部</button>
+      <button type="button" data-cat="记录">日常记录</button>
+      <button type="button" data-cat="访谈">人物访谈</button>
+      <button type="button" data-cat="幕后">创作幕后</button>
+      <button type="button" data-cat="城市">城市探索</button>
+      <button type="button" data-cat="技巧">实用技巧</button>
+    </div>
+    <div class="jdmry-video-grid" id="jdmryVideoGrid">
+      <article class="jdmry-vcard" data-cat="城市">
+        <div class="jdmry-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23223547'/%3E%3Cg fill='%23f4c9a0' opacity='0.9'%3E%3Crect x='40' y='110' width='24' height='70'/%3E%3Crect x='80' y='80' width='18' height='100'/%3E%3Crect x='116' y='126' width='28' height='54'/%3E%3Crect x='290' y='94' width='22' height='86'/%3E%3Crect x='330' y='128' width='26' height='52'/%3E%3C/g%3E%3Ccircle cx='214' cy='86' r='26' fill='%23ffe3c2' opacity='0.9'/%3E%3Cpath d='M0 186 Q120 150 240 188 T400 180 L400 225 L0 225Z' fill='%23141d28'/%3E%3C/svg%3E" alt="老城街巷黄昏城市探索视频封面">
+          <span class="jdmry-vcard-cat">城市探索</span>
+          <span class="jdmry-vcard-dur">21:36</span>
+          <span class="jdmry-vcard-play">▶</span>
+        </div>
+        <div class="jdmry-vcard-body">
+          <h3>黄昏六点，走进老城最后一条打铁巷</h3>
+          <p class="jdmry-vdesc">三家还在开门的铺子、两位八十岁的老师傅，我们用一下午记录下这条巷子正在褪色的声音。</p>
+          <div class="jdmry-vcard-tags"><span>在地文化</span><span>手艺</span></div>
+          <div class="jdmry-vcard-foot">
+            <div class="jdmry-author"><span class="jdmry-avatar" style="background:#e85d75">孟</span>孟若羽</div>
+            <div class="jdmry-actions">
+              <button class="jdmry-act jdmry-like" type="button">♥ <b>1,284</b></button>
+              <button class="jdmry-act jdmry-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="jdmry-vcard" data-cat="访谈">
+        <div class="jdmry-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23f3e4ee'/%3E%3Ccircle cx='200' cy='96' r='44' fill='%23c76a8c' opacity='0.85'/%3E%3Ccircle cx='200' cy='96' r='26' fill='%23f7dbe6'/%3E%3Crect x='60' y='170' width='280' height='10' rx='5' fill='%23d6a2b8' opacity='0.7'/%3E%3Ctext x='30' y='40' font-family='sans-serif' font-size='15' fill='%238d4a66'%3E人物访谈%3C/text%3E%3C/svg%3E" alt="创作者访谈现场对话视频封面">
+          <span class="jdmry-vcard-cat">人物访谈</span>
+          <span class="jdmry-vcard-dur">34:12</span>
+          <span class="jdmry-vcard-play">▶</span>
+        </div>
+        <div class="jdmry-vcard-body">
+          <h3>对话孟若羽：我为什么坚持拍“不完美的人”</h3>
+          <p class="jdmry-vdesc">从短片创作者到品牌内容负责人，她谈选题焦虑、谈拍摄现场的失控，也谈为什么愿意为一个镜头等上一天。</p>
+          <div class="jdmry-vcard-tags"><span>品牌故事</span><span>对话</span></div>
+          <div class="jdmry-vcard-foot">
+            <div class="jdmry-author"><span class="jdmry-avatar" style="background:#7a3350">访</span>品牌访谈组</div>
+            <div class="jdmry-actions">
+              <button class="jdmry-act jdmry-like" type="button">♥ <b>968</b></button>
+              <button class="jdmry-act jdmry-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="jdmry-vcard" data-cat="幕后">
+        <div class="jdmry-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23e9eef3'/%3E%3Crect x='44' y='48' width='140' height='96' rx='8' fill='%23ffffff' stroke='%23a9bdd0' stroke-width='3'/%3E%3Crect x='68' y='66' width='92' height='8' rx='4' fill='%23b9ccdc'/%3E%3Crect x='68' y='84' width='64' height='8' rx='4' fill='%23d4e1eb'/%3E%3Crect x='210' y='64' width='120' height='70' rx='6' fill='%233e5b78'/%3E%3Cpath d='M246 86 l38 20 -38 20z' fill='%23f0c9a8'/%3E%3Ctext x='30' y='206' font-family='sans-serif' font-size='15' fill='%233e5b78'%3E幕后工作台%3C/text%3E%3C/svg%3E" alt="剪辑软件时间线创作幕后封面">
+          <span class="jdmry-vcard-cat">创作幕后</span>
+          <span class="jdmry-vcard-dur">16:48</span>
+          <span class="jdmry-vcard-play">▶</span>
+        </div>
+        <div class="jdmry-vcard-body">
+          <h3>一条 3 分钟短片，为什么剪了 27 版</h3>
+          <p class="jdmry-vdesc">从粗剪到大结局确认，完整展示版本迭代逻辑，也分享我们判断“何时该停手”的三个标准。</p>
+          <div class="jdmry-vcard-tags"><span>剪辑思路</span><span>教程</span></div>
+          <div class="jdmry-vcard-foot">
+            <div class="jdmry-author"><span class="jdmry-avatar" style="background:#3e5b78">剪</span>后期组</div>
+            <div class="jdmry-actions">
+              <button class="jdmry-act jdmry-like" type="button">♥ <b>742</b></button>
+              <button class="jdmry-act jdmry-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="jdmry-vcard" data-cat="记录">
+        <div class="jdmry-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23eaf2e6'/%3E%3Ccircle cx='96' cy='70' r='30' fill='%23cfe1c2'/%3E%3Cpath d='M0 168 Q100 128 200 166 T400 158 L400 225 L0 225Z' fill='%238fae7d' opacity='0.75'/%3E%3Crect x='250' y='60' width='90' height='64' rx='6' fill='%23ffffff' opacity='0.85'/%3E%3Crect x='266' y='78' width='58' height='6' rx='3' fill='%23a9c499'/%3E%3Crect x='266' y='94' width='40' height='6' rx='3' fill='%23c8dbbd'/%3E%3C/svg%3E" alt="阳台植物养护日常记录封面">
+          <span class="jdmry-vcard-cat">日常记录</span>
+          <span class="jdmry-vcard-dur">12:05</span>
+          <span class="jdmry-vcard-play">▶</span>
+        </div>
+        <div class="jdmry-vcard-body">
+          <h3>六平米阳台的四季：一个人的植物观察笔记</h3>
+          <p class="jdmry-vdesc">她用一年时间拍下同一扇窗外的光，从春天第一片新叶到冬天最后一次修剪，安静但有力量。</p>
+          <div class="jdmry-vcard-tags"><span>治愈影像</span><span>生活</span></div>
+          <div class="jdmry-vcard-foot">
+            <div class="jdmry-author"><span class="jdmry-avatar" style="background:#7f9c68">植</span>林九月</div>
+            <div class="jdmry-actions">
+              <button class="jdmry-act jdmry-like" type="button">♥ <b>1,103</b></button>
+              <button class="jdmry-act jdmry-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="jdmry-vcard" data-cat="技巧">
+        <div class="jdmry-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23fff2dd'/%3E%3Crect x='52' y='52' width='120' height='120' rx='14' fill='%23ffffff' stroke='%23e3b872' stroke-width='3'/%3E%3Ccircle cx='112' cy='104' r='30' fill='%23f3ce9a'/%3E%3Cpath d='M200 132 h140' stroke='%23d9a95e' stroke-width='6' stroke-linecap='round'/%3E%3Cpath d='M200 158 h96' stroke='%23e9c68f' stroke-width='6' stroke-linecap='round'/%3E%3Ctext x='200' y='106' font-family='sans-serif' font-size='17' fill='%238a6127'%3E实用技巧%3C/text%3E%3C/svg%3E" alt="手机拍摄收音技巧演示封面">
+          <span class="jdmry-vcard-cat">实用技巧</span>
+          <span class="jdmry-vcard-dur">09:27</span>
+          <span class="jdmry-vcard-play">▶</span>
+        </div>
+        <div class="jdmry-vcard-body">
+          <h3>小成本拍摄指南：用两支麦解决八成收音问题</h3>
+          <p class="jdmry-vdesc">不讲参数堆砌，直接演示室内、街头、餐桌三种场景的实用布麦方式，附可下载的设备清单。</p>
+          <div class="jdmry-vcard-tags"><span>教程干货</span><span>设备</span></div>
+          <div class="jdmry-vcard-foot">
+            <div class="jdmry-author"><span class="jdmry-avatar" style="background:#c9963b">声</span>声音小组</div>
+            <div class="jdmry-actions">
+              <button class="jdmry-act jdmry-like" type="button">♥ <b>635</b></button>
+              <button class="jdmry-act jdmry-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="jdmry-vcard" data-cat="访谈">
+        <div class="jdmry-vcard-cover">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 225'%3E%3Crect width='400' height='225' fill='%23e8e3f5'/%3E%3Ccircle cx='130' cy='92' r='36' fill='%239b8bd1' opacity='0.85'/%3E%3Ccircle cx='268' cy='92' r='36' fill='%23c9a2d9' opacity='0.8'/%3E%3Cpath d='M56 178 q74 -40 148 0' stroke='%23857ac0' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3Cpath d='M196 178 q74 -40 148 0' stroke='%23b68fc9' stroke-width='6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" alt="两位创作者对谈节目封面">
+          <span class="jdmry-vcard-cat">人物访谈</span>
+          <span class="jdmry-vcard-dur">28:54</span>
+          <span class="jdmry-vcard-play">▶</span>
+        </div>
+        <div class="jdmry-vcard-body">
+          <h3>两位年轻创作者的对谈：镜头之外，我们靠什么坚持</h3>
+          <p class="jdmry-vdesc">一个拍夜市，一个拍老人，他们聊选题撞车、聊流量焦虑，也聊被观众记住名字的那一刻。</p>
+          <div class="jdmry-vcard-tags"><span>成长</span><span>同好</span></div>
+          <div class="jdmry-vcard-foot">
+            <div class="jdmry-author"><span class="jdmry-avatar" style="background:#857ac0">谈</span>对话频道</div>
+            <div class="jdmry-actions">
+              <button class="jdmry-act jdmry-like" type="button">♥ <b>521</b></button>
+              <button class="jdmry-act jdmry-save" type="button">☆ 收藏</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 专题企划 -->
+<section class="jdmry-sec" id="jdmryTopics">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">专题企划</h2>
+        <p class="jdmry-sec-sub">每季围绕一个母题展开，由品牌编辑与签约创作者共同策划，欢迎观众参与投票与投稿。</p>
+      </div>
+      <button class="jdmry-sec-more" type="button" onclick="jdmryOpenModal('share')">分享专题</button>
+    </div>
+    <div class="jdmry-topic-grid">
+      <article class="jdmry-topic" style="background:linear-gradient(150deg,#4a2b45,#b2517c)">
+        <em>进行中 · 第 4 期</em>
+        <b>冬日影像企划：把温暖拍进画面</b>
+        <span>征集以“温度”为核心的短片，主题不限，鼓励真实记录与克制表达，报名通道持续开放。</span>
+      </article>
+      <article class="jdmry-topic" style="background:linear-gradient(150deg,#20405c,#5b8fa8)">
+        <em>已完结 · 全 8 集</em>
+        <b>城市十二时：一天里的城市表情</b>
+        <span>从凌晨四点的鱼市到午夜十二点的便利店，用十二个时间切片拼出一座城市的完整呼吸。</span>
+      </article>
+      <article class="jdmry-topic" style="background:linear-gradient(150deg,#5b4a2b,#a8823f)">
+        <em>征集中 · 截止 12/20</em>
+        <b>手艺人间：记录正在消失的技艺</b>
+        <span>面向所有创作者开放投稿，入选作品将获得品牌制作支持与专题首页推荐资源。</span>
+      </article>
+      <article class="jdmry-topic" style="background:linear-gradient(150deg,#3a2f4d,#7a5fa0)">
+        <em>投票中 · 观众评审</em>
+        <b>我的第一支短片：新人作品展</b>
+        <span>本期共收到 186 份投稿，观众投票正在开放，最终入围名单将在官方网站公布。</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 创作者 -->
+<section class="jdmry-sec" id="jdmryCreators">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">创作者矩阵</h2>
+        <p class="jdmry-sec-sub">果冻传媒孟若羽与创作者共同成长，每一位都在用自己的方式讲述真实。</p>
+      </div>
+      <button class="jdmry-sec-more" type="button" onclick="jdmryOpenModal('apply')">申请入驻</button>
+    </div>
+    <div class="jdmry-creator-grid">
+      <article class="jdmry-creator">
+        <span class="jdmry-avatar" style="background:linear-gradient(140deg,#e85d75,#b8385a)">孟</span>
+        <b>孟若羽</b>
+        <span class="jdmry-cfield">人物纪录 · 品牌主理</span>
+        <p>擅长把镜头放低一点，再放低一点。代表作《城市微光》系列。</p>
+        <div class="jdmry-cdata"><span><b>86</b>作品</span><span><b>24.6万</b>关注</span></div>
+      </article>
+      <article class="jdmry-creator">
+        <span class="jdmry-avatar" style="background:linear-gradient(140deg,#5b8fa8,#20405c)">林</span>
+        <b>林九月</b>
+        <span class="jdmry-cfield">生活记录 · 植物观察</span>
+        <p>用四季作为拍摄周期，喜欢自然光和长时间的等待。</p>
+        <div class="jdmry-cdata"><span><b>43</b>作品</span><span><b>11.2万</b>关注</span></div>
+      </article>
+      <article class="jdmry-creator">
+        <span class="jdmry-avatar" style="background:linear-gradient(140deg,#a8823f,#5b4a2b)">陈</span>
+        <b>陈砚白</b>
+        <span class="jdmry-cfield">手艺记录 · 在地文化</span>
+        <p>跑了七年老手艺，习惯先聊天再开机，作品里常有方言声音。</p>
+        <div class="jdmry-cdata"><span><b>61</b>作品</span><span><b>9.8万</b>关注</span></div>
+      </article>
+      <article class="jdmry-creator">
+        <span class="jdmry-avatar" style="background:linear-gradient(140deg,#857ac0,#3a2f4d)">周</span>
+        <b>周与安</b>
+        <span class="jdmry-cfield">人物访谈 · 深度对话</span>
+        <p>相信提问比答案重要，擅于让人在镜头前慢慢放松下来。</p>
+        <div class="jdmry-cdata"><span><b>27</b>作品</span><span><b>7.4万</b>关注</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 故事随笔 -->
+<section class="jdmry-story" id="jdmryStory">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">品牌故事与拍摄随笔</h2>
+        <p class="jdmry-sec-sub">影像之外，还有一些没剪进片子里的部分，值得被写下来。</p>
+      </div>
+    </div>
+    <div class="jdmry-story-grid">
+      <article class="jdmry-story-card">
+        <span class="jdmry-story-num">01</span>
+        <h3>为了一分钟的清晨，我们等了九个早上</h3>
+        <p>《城市微光》开场那组逆光镜头，其实拍了九次。前八天的天气都不对，第七天甚至下起了雨，摄像大哥蹲在屋檐下抽烟，谁也没说话。第九天清晨五点二十，光刚好从两栋楼之间斜过来，我们只拍到四分钟，但够了。</p>
+        <span class="jdmry-story-sign">—— 摄影组 · 记录于片场</span>
+      </article>
+      <article class="jdmry-story-card">
+        <span class="jdmry-story-num">02</span>
+        <h3>“你们能不能把我拍得普通一点”</h3>
+        <p>受访的早餐摊主阿姨在开机前特意换了件新衣服，后来又换回旧的。她说，来吃面的都是街坊，穿太新不像她。这句话后来成了那支短片的结尾，也成了我们内部反复讨论的一个标准：真实比好看重要。</p>
+        <span class="jdmry-story-sign">—— 编导组 · 访谈笔记</span>
+      </article>
+      <article class="jdmry-story-card">
+        <span class="jdmry-story-num">03</span>
+        <h3>为什么我们把片尾字幕留得那么长</h3>
+        <p>每部片子结尾，我们会把参与者的名字完整列出，包括帮忙搬设备的实习生和提供场地的店主。这不是形式，是提醒自己：影像从来不是一个人的作品。观众也许不会看完字幕，但我们希望它真实存在。</p>
+        <span class="jdmry-story-sign">—— 品牌内容团队</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- 用户评价 -->
+<section class="jdmry-sec" id="jdmryReviews">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">观众怎么说</h2>
+        <p class="jdmry-sec-sub">来自评论区、观影会与投稿邮箱的真实反馈，构成了品牌继续前行的理由。</p>
+      </div>
+    </div>
+    <div class="jdmry-comment-grid">
+      <div class="jdmry-comment">
+        <div class="jdmry-comment-head"><span class="jdmry-avatar" style="background:#e85d75">雨</span><b>雨天不打伞</b><span>2 天前</span></div>
+        <div class="jdmry-cstars">★★★★★</div>
+        <p>看《城市微光》的时候正好在加班，最后一集结束我盯着屏幕坐了很久。很感谢果冻传媒孟若羽愿意把镜头给这些平时不被注意的人。</p>
+      </div>
+      <div class="jdmry-comment">
+        <div class="jdmry-comment-head"><span class="jdmry-avatar" style="background:#5b8fa8">北</span><b>北岸旧书</b><span>3 天前</span></div>
+        <div class="jdmry-cstars">★★★★★</div>
+        <p>画面和声音都干净，没有多余的煽情配乐，这种克制在现在挺难得的。已经把品牌主页加入收藏夹，慢慢看。</p>
+      </div>
+      <div class="jdmry-comment">
+        <div class="jdmry-comment-head"><span class="jdmry-avatar" style="background:#a8823f">阿</span><b>阿禾同学</b><span>4 天前</span></div>
+        <div class="jdmry-cstars">★★★★☆</div>
+        <p>作为刚入行的学生，剪辑思路那几条真的帮到我了。希望以后能多一些设备清单和脚本模板的下载，新手很需要。</p>
+      </div>
+      <div class="jdmry-comment">
+        <div class="jdmry-comment-head"><span class="jdmry-avatar" style="background:#857ac0">慢</span><b>慢半拍的老张</b><span>5 天前</span></div>
+        <div class="jdmry-cstars">★★★★★</div>
+        <p>追了两年，眼看着专题越做越扎实。上次投稿了一支手作短片，编辑回复给了很具体的三条修改建议，比心。</p>
+      </div>
+      <div class="jdmry-comment">
+        <div class="jdmry-comment-head"><span class="jdmry-avatar" style="background:#7f9c68">南</span><b>南方小院</b><span>6 天前</span></div>
+        <div class="jdmry-cstars">★★★★☆</div>
+        <p>喜欢植物观察那期，节奏很慢但不闷。就是希望能出完整版合集，一集一集追有点碎。客服回得挺快的，态度也好。</p>
+      </div>
+      <div class="jdmry-comment">
+        <div class="jdmry-comment-head"><span class="jdmry-avatar" style="background:#b8385a">光</span><b>光年之外</b><span>1 周前</span></div>
+        <div class="jdmry-cstars">★★★★★</div>
+        <p>在观影会上见到孟若羽本人，聊了半小时选题。她很直接地说“不知道就再去拍一条”，这句话我记到现在。</p>
+      </div>
+      <div class="jdmry-comment">
+        <div class="jdmry-comment-head"><span class="jdmry-avatar" style="background:#3e5b78">一</span><b>一条鱼</b><span>1 周前</span></div>
+        <div class="jdmry-cstars">★★★★☆</div>
+        <p>整体很喜欢，唯独希望移动端的播放窗口能再大一点，字幕在全屏下略小。其他体验都挺顺的。</p>
+      </div>
+      <div class="jdmry-comment">
+        <div class="jdmry-comment-head"><span class="jdmry-avatar" style="background:#c9963b">木</span><b>木桶饭</b><span>1 周前</span></div>
+        <div class="jdmry-cstars">★★★★★</div>
+        <p>因为你们的老城系列，我骑车去了那条打铁巷，铺子还在。这种片子最好的地方是它真的存在于现实里。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 作品墙 -->
+<section class="jdmry-sec" id="jdmryWall">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">影像作品墙</h2>
+        <p class="jdmry-sec-sub">来自品牌与社区创作者的影像切片，每一格都是一个被认真对待的瞬间。</p>
+      </div>
+    </div>
+    <div class="jdmry-wall">
+      <div class="jdmry-wall-item jdmry-wall-big">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 400'%3E%3Crect width='600' height='400' fill='%23f4dfe6'/%3E%3Ccircle cx='210' cy='150' r='72' fill='%23e8a3b8'/%3E%3Cpath d='M0 300 Q150 240 300 300 T600 288 L600 400 L0 400Z' fill='%23b8385a' opacity='0.55'/%3E%3Cg fill='%23fff' opacity='0.75'%3E%3Crect x='380' y='90' width='130' height='88' rx='8'/%3E%3Crect x='400' y='112' width='90' height='8' rx='4' fill='%23e8a3b8'/%3E%3Crect x='400' y='132' width='64' height='8' rx='4' fill='%23f3c3d0'/%3E%3C/g%3E%3C/svg%3E" alt="品牌年度主视觉粉色抽象影像">
+        <span>年度主视觉 · 柔光</span>
+      </div>
+      <div class="jdmry-wall-item jdmry-wall-mid">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23dfe9f2'/%3E%3Crect x='60' y='140' width='280' height='14' rx='7' fill='%23a9c2d8'/%3E%3Ccircle cx='200' cy='92' r='40' fill='%23ffffff' opacity='0.9'/%3E%3Cpath d='M0 236 L120 190 L240 238 L400 198 L400 300 L0 300Z' fill='%235b8fa8' opacity='0.65'/%3E%3C/svg%3E" alt="清晨城市天际线纪实影像">
+        <span>城市十二时 · 清晨</span>
+      </div>
+      <div class="jdmry-wall-item jdmry-wall-small">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23f6ead5'/%3E%3Ccircle cx='150' cy='140' r='62' fill='%23e5b273'/%3E%3Crect x='96' y='96' width='108' height='108' rx='16' fill='none' stroke='%23b9874a' stroke-width='6'/%3E%3C/svg%3E" alt="手作陶艺橙色特写影像">
+        <span>手艺人间 · 陶</span>
+      </div>
+      <div class="jdmry-wall-item jdmry-wall-small">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23e8e3f5'/%3E%3Cpath d='M40 210 Q150 120 260 210' stroke='%23857ac0' stroke-width='10' fill='none' stroke-linecap='round'/%3E%3Ccircle cx='150' cy='90' r='34' fill='%23c9a2d9'/%3E%3C/svg%3E" alt="人物访谈对话紫色抽象影像">
+        <span>对话 · 声音现场</span>
+      </div>
+      <div class="jdmry-wall-item jdmry-wall-mid">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23eef3e8'/%3E%3Ccircle cx='110' cy='110' r='44' fill='%238fae7d' opacity='0.85'/%3E%3Ccircle cx='230' cy='150' r='58' fill='%23b9d4a5' opacity='0.8'/%3E%3Ccircle cx='320' cy='96' r='30' fill='%23cfe1c2'/%3E%3Cpath d='M0 240 Q200 196 400 236 L400 300 L0 300Z' fill='%237f9c68' opacity='0.5'/%3E%3C/svg%3E" alt="阳台植物四季生长记录影像">
+        <span>植物观察 · 四季</span>
+      </div>
+      <div class="jdmry-wall-item jdmry-wall-small">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23223547'/%3E%3Cg fill='%23f4c9a0'%3E%3Crect x='52' y='150' width='26' height='90'/%3E%3Crect x='102' y='118' width='20' height='122'/%3E%3Crect x='200' y='140' width='30' height='100'/%3E%3C/g%3E%3Ccircle cx='176' cy='96' r='24' fill='%23ffe3c2'/%3E%3C/svg%3E" alt="夜色街区城市纪实影像">
+        <span>夜行 · 街区</span>
+      </div>
+      <div class="jdmry-wall-item jdmry-wall-small">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23fde7ec'/%3E%3Cpath d='M60 210 L120 120 L180 210Z' fill='%23e85d75' opacity='0.8'/%3E%3Ccircle cx='220' cy='110' r='26' fill='%23f2a7b8'/%3E%3C/svg%3E" alt="冬日影像企划粉红几何影像">
+        <span>冬日企划 · 温度</span>
+      </div>
+      <div class="jdmry-wall-item jdmry-wall-small">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 300'%3E%3Crect width='300' height='300' fill='%23fff2dd'/%3E%3Crect x='80' y='96' width='140' height='110' rx='10' fill='%23ffffff' stroke='%23e3b872' stroke-width='5'/%3E%3Cpath d='M116 150 h68' stroke='%23d9a95e' stroke-width='7' stroke-linecap='round'/%3E%3Cpath d='M116 172 h42' stroke='%23e9c68f' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E" alt="实用技巧教程卡片米色影像">
+        <span>技巧 · 收音</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 榜单 + 灵感 -->
+<section class="jdmry-sec" id="jdmryRank">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">榜单与创作灵感</h2>
+        <p class="jdmry-sec-sub">热度不是唯一标准，但数据能帮我们看见观众的偏好。</p>
+      </div>
+    </div>
+    <div class="jdmry-duo">
+      <div class="jdmry-rank">
+        <h3>本月热度榜 <em>每两周更新</em></h3>
+        <ol>
+          <li><span class="jdmry-rank-no">1</span><span class="jdmry-rank-name">《城市微光》：在夜班与清晨之间</span><span class="jdmry-rank-heat">9.6 万热度</span></li>
+          <li><span class="jdmry-rank-no">2</span><span class="jdmry-rank-name">对话孟若羽：坚持拍“不完美的人”</span><span class="jdmry-rank-heat">8.2 万热度</span></li>
+          <li><span class="jdmry-rank-no">3</span><span class="jdmry-rank-name">六平米阳台的四季</span><span class="jdmry-rank-heat">6.7 万热度</span></li>
+          <li><span class="jdmry-rank-no">4</span><span class="jdmry-rank-name">一条 3 分钟短片，为什么剪了 27 版</span><span class="jdmry-rank-heat">5.9 万热度</span></li>
+          <li><span class="jdmry-rank-no">5</span><span class="jdmry-rank-name">黄昏六点，走进老城最后一条打铁巷</span><span class="jdmry-rank-heat">5.1 万热度</span></li>
+          <li><span class="jdmry-rank-no">6</span><span class="jdmry-rank-name">小成本拍摄指南：用两支麦解决收音</span><span class="jdmry-rank-heat">4.4 万热度</span></li>
+        </ol>
+      </div>
+      <div class="jdmry-inspire">
+        <h3>创作灵感工作台</h3>
+        <p>从选题到成片，果冻传媒孟若羽整理了社区里最常被问到的几个问题，给你一点开始的勇气。</p>
+        <div class="jdmry-inspire-row"><i>选题</i><span>从你最熟悉的三条街开始，先拍一条“走过”，再想它为什么值得被记住。</span></div>
+        <div class="jdmry-inspire-row"><i>标题</i><span>把具体名词放进标题：不要“城市故事”，试试“打铁巷最后一个上午”。</span></div>
+        <div class="jdmry-inspire-row"><i>剪辑</i><span>先做减法：删掉所有你自己也觉得“可以但没有必要”的镜头。</span></div>
+        <div class="jdmry-inspire-row"><i>声音</i><span>环境声不是噪音，它是现场感。留三秒原声，往往比配乐更动人。</span></div>
+        <button class="jdmry-btn jdmry-btn-primary jdmry-inspire-btn" type="button" onclick="jdmryOpenModal('submit')">获取投稿清单</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 企业动态 + FAQ -->
+<section class="jdmry-sec" id="jdmryDynamics">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">企业动态与常见问题</h2>
+        <p class="jdmry-sec-sub">品牌官方发布、合作进展与帮助说明，都在这里集中更新。</p>
+      </div>
+    </div>
+    <div class="jdmry-dyn-faq">
+      <div class="jdmry-dyn">
+        <ul>
+          <li>
+            <span class="jdmry-dyn-date">2026-11-16 · 官方发布</span>
+            <b>冬日影像企划报名通道开启</b>
+            <p>本期以“温度”为主题，面向所有创作者征集 3 至 15 分钟短片，入选作品将获得品牌制作支持与专题推荐资源。</p>
+          </li>
+          <li>
+            <span class="jdmry-dyn-date">2026-11-08 · 内容更新</span>
+            <b>《城市微光》纪录特辑全集上线</b>
+            <p>历时四个月跟拍完成，共六集，含两集幕后花絮。配音、字幕与调色均按品牌统一标准精修。</p>
+          </li>
+          <li>
+            <span class="jdmry-dyn-date">2026-10-27 · 品牌合作</span>
+            <b>与本地文化机构达成年度合作</b>
+            <p>双方将围绕老城手艺、方言记录与青年创作者培养展开联合企划，相关作品将陆续在官方网站更新。</p>
+          </li>
+          <li>
+            <span class="jdmry-dyn-date">2026-10-12 · 社区活动</span>
+            <b>第三场线下观影交流会顺利举行</b>
+            <p>本场放映《打铁巷》，映后由导演与受访老师傅连线交流，现场观众提问超过四十条。</p>
+          </li>
+          <li>
+            <span class="jdmry-dyn-date">2026-09-30 · 平台升级</span>
+            <b>播放页新增收藏与观看进度记忆</b>
+            <p>本次升级优化了移动端全屏体验，并新增创作者主页的完整作品归档，方便观众系统回看。</p>
+          </li>
+        </ul>
+      </div>
+      <div class="jdmry-faq">
+        <details open>
+          <summary>如何向果冻传媒孟若羽投稿？</summary>
+          <div class="jdmry-faq-body">可通过页面中的“投稿入口”提交作品信息与预览链接，编辑团队将在五个工作日内回复。建议附上拍摄手记与素材说明，便于评估与沟通修改方向。</div>
+        </details>
+        <details>
+          <summary>投稿作品有哪些技术要求？</summary>
+          <div class="jdmry-faq-body">建议提供 1080P 及以上画质，画面无第三方水印，声音清晰。短片时长不限，若为系列内容请注明集数与更新节奏。真人出镜内容需确保已获得肖像授权。</div>
+        </details>
+        <details>
+          <summary>平台的内容审核标准是什么？</summary>
+          <div class="jdmry-faq-body">我们关注真实性、原创性与表达分寸。作品需为作者原创或已获完整授权，不得包含侵权素材。涉及具体人物与场所时，需尊重当事人意愿，必要时提供书面同意说明。</div>
+        </details>
+        <details>
+          <summary>入驻创作者可以获得哪些支持？</summary>
+          <div class="jdmry-faq-body">包括选题共创、拍摄与后期指导、品牌设备与素材支持、专题推荐位以及线下活动参与机会。表现稳定的创作者可进入季度创作基金计划。</div>
+        </details>
+        <details>
+          <summary>专题企划的评审维度有哪些？</summary>
+          <div class="jdmry-faq-body">主要从主题契合度、叙事完成度、影像品质与真实感四个维度评估，观众投票作为参考项之一。评审进度与结果会在企业动态中公示。</div>
+        </details>
+        <details>
+          <summary>是否支持机构或品牌合作？</summary>
+          <div class="jdmry-faq-body">支持。我们与在地文化机构、生活方式品牌及影像设备方均有合作形式，包括联合企划、内容定制与线下放映。可通过页面底部联系方式沟通需求与档期。</div>
+        </details>
+        <details>
+          <summary>如何反馈播放或页面问题？</summary>
+          <div class="jdmry-faq-body">可在任意作品页使用反馈入口，或直接发送邮件说明设备型号、系统版本与问题现象。我们会持续优化播放体验，感谢每一位认真反馈的观众。</div>
+        </details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 合作品牌 -->
+<section class="jdmry-sec" id="jdmryPartner">
+  <div class="jdmry-wrap">
+    <div class="jdmry-sec-head">
+      <div>
+        <h2 class="jdmry-sec-title">合作品牌与伙伴</h2>
+        <p class="jdmry-sec-sub">感谢一路同行的伙伴，让更多真实的故事被看见。</p>
+      </div>
+    </div>
+    <div class="jdmry-partner">
+      <div>青石影像器材</div>
+      <div>南岸书店</div>
+      <div>城市文化馆</div>
+      <div>慢山咖啡</div>
+      <div>拾光放映社</div>
+    </div>
+  </div>
+</section>
+
+<!-- 联系 -->
+<section class="jdmry-sec" id="jdmryContact">
+  <div class="jdmry-wrap">
+    <div class="jdmry-contact">
+      <div>
+        <h2>把你的故事，交给果冻传媒孟若羽</h2>
+        <p>无论是投稿、合作还是反馈，我们都愿意认真读完每一条消息。官方网站持续更新品牌动态与企划进展，欢迎常回来看看。</p>
+        <p>我们相信，好的内容需要被耐心对待，也需要被更多人一起完成。</p>
+        <div class="jdmry-contact-acts">
+          <button class="jdmry-btn jdmry-btn-primary" type="button" onclick="jdmryOpenModal('submit')">提交投稿</button>
+          <button class="jdmry-btn jdmry-btn-ghost" type="button" onclick="jdmryOpenModal('share')">分享本页</button>
+          <button class="jdmry-btn jdmry-btn-ghost" type="button" onclick="jdmryOpenModal('report')">问题反馈</button>
+        </div>
+      </div>
+      <div class="jdmry-contact-card">
+        <h3>品牌联系方式</h3>
+        <dl>
+          <dt>投稿邮箱</dt><dd>creator@jelly-mry.official</dd>
+          <dt>合作邮箱</dt><dd>partner@jelly-mry.official</dd>
+          <dt>工作时间</dt><dd>周一至周五 10:00–19:00</dd>
+          <dt>线下空间</dt><dd>青石影像空间 · 需预约</dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="jdmry-footer">
+  <div class="jdmry-wrap">
+    <div class="jdmry-footer-grid">
+      <div>
+        <div class="jdmry-foot-logo">
+          <span class="jdmry-logo-mark">果</span>
+          <b>果冻传媒孟若羽</b>
+        </div>
+        <p>果冻传媒孟若羽官方网站，专注原创影像与人物记录，持续运营品牌内容生态，坚持正版、高清与真实表达，与创作者共同成长。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <ul>
+          <li><a href="#jdmryFocus">视频焦点</a></li>
+          <li><a href="#jdmryFeed">热门视频流</a></li>
+          <li><a href="#jdmryTopics">专题企划</a></li>
+          <li><a href="#jdmryWall">影像作品墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>品牌与社区</h4>
+        <ul>
+          <li><a href="#jdmryStory">品牌故事</a></li>
+          <li><a href="#jdmryCreators">创作者矩阵</a></li>
+          <li><a href="#jdmryDynamics">企业动态</a></li>
+          <li><a href="#jdmryReviews">观众评价</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>帮助与联系</h4>
+        <ul>
+          <li><a href="#jdmryFaq">常见问题</a></li>
+          <li><a href="#jdmryContact">投稿与合作</a></li>
+          <li><a href="javascript:void(0)" onclick="jdmryOpenModal('report')">问题反馈</a></li>
+          <li><a href="javascript:void(0)" onclick="jdmryOpenModal('share')">分享本站</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="jdmry-footer-bottom">
+      <span>© 2026 果冻传媒孟若羽 官方网站 · 版权所有 · 内容均为原创或已获授权</span>
+      <span>持续运营中 · 品牌备案号：JDM-2026-OFFICIAL</span>
+    </div>
+  </div>
+</footer>
+
+<div class="jdmry-toast" id="jdmryToast">操作成功</div>
+<button class="jdmry-top" id="jdmryTop" type="button" aria-label="回到顶部">↑</button>
+
+<!-- 弹窗 -->
+<div class="jdmry-modal" id="jdmryModal">
+  <div class="jdmry-modal-box">
+    <button class="jdmry-modal-close" type="button" aria-label="关闭弹窗" onclick="jdmryCloseModal()">✕</button>
+    <div id="jdmryModalContent"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  var toastTimer = null;
+  function showToast(msg){
+    var t = document.getElementById('jdmryToast');
+    t.textContent = msg;
+    t.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ t.classList.remove('show'); }, 2200);
+  }
+  window.jdmryShowToast = showToast;
+
+  /* 移动端导航 */
+  var burger = document.getElementById('jdmryBurger');
+  var header = document.getElementById('jdmryHeader');
+  burger.addEventListener('click', function(){
+    header.classList.toggle('jdmry-mobile-open');
+  });
+  document.querySelectorAll('.jdmry-nav-links a').forEach(function(a){
+    a.addEventListener('click', function(){
+      header.classList.remove('jdmry-mobile-open');
+      document.querySelectorAll('.jdmry-nav-links a').forEach(function(x){ x.classList.remove('is-active'); });
+      a.classList.add('is-active');
+    });
+  });
+
+  /* 搜索 */
+  var searchInput = document.getElementById('jdmrySearchInput');
+  var searchHint = document.getElementById('jdmrySearchHint');
+  if(searchInput){
+    searchInput.addEventListener('focus', function(){ searchHint.classList.add('show'); });
+    searchInput.addEventListener('input', function(){
+      searchHint.classList.add('show');
+      if(searchInput.value.trim().length > 0){
+        searchHint.querySelectorAll('p').forEach(function(p){
+          p.style.display = p.textContent.indexOf(searchInput.value.trim()) > -1 ? 'block' : 'none';
+        });
+      } else {
+        searchHint.querySelectorAll('p').forEach(function(p){ p.style.display = 'block'; });
+      }
+    });
+    document.addEventListener('click', function(e){
+      if(!e.target.closest('.jdmry-search')) searchHint.classList.remove('show');
+    });
+  }
+  window.jdmryQuickSearch = function(kw){
+    if(searchInput){ searchInput.value = kw; }
+    searchHint.classList.remove('show');
+    showToast('正在为你检索「' + kw + '」相关作品');
+  };
+  window.jdmryDoSearch = function(){
+    var v = searchInput ? searchInput.value.trim() : '';
+    if(!v){ showToast('请输入关键词后再搜索'); return; }
+    showToast('已为你筛选「' + v + '」相关内容');
+    searchHint.classList.remove('show');
+    var feed = document.getElementById('jdmryFeed');
+    if(feed) feed.scrollIntoView({behavior:'smooth'});
+  };
+
+  /* 点赞 / 收藏 */
+  document.querySelectorAll('.jdmry-like').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      var b = btn.querySelector('b');
+      var num = parseInt(b.textContent.replace(/,/g,''), 10) || 0;
+      if(btn.classList.contains('is-liked')){
+        num = Math.max(0, num - 1);
+        btn.classList.remove('is-liked');
+        showToast('已取消点赞');
+      } else {
+        num = num + 1;
+        btn.classList.add('is-liked');
+        showToast('感谢你的喜欢');
+      }
+      b.textContent = num.toLocaleString('en-US');
+    });
+  });
+  document.querySelectorAll('.jdmry-save').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.preventDefault();
+      if(btn.classList.contains('is-saved')){
+        btn.classList.remove('is-saved');
+        btn.innerHTML = '☆ 收藏';
+        showToast('已取消收藏');
+      } else {
+        btn.classList.add('is-saved');
+        btn.innerHTML = '★ 已收藏';
+        showToast('已加入收藏，稍后可回看');
+      }
+    });
+  });
+
+  /* 标签筛选 */
+  var filterBar = document.getElementById('jdmryFilterBar');
+  if(filterBar){
+    filterBar.addEventListener('click', function(e){
+      var b = e.target.closest('button');
+      if(!b) return;
+      filterBar.querySelectorAll('button').forEach(function(x){ x.classList.remove('is-on'); });
+      b.classList.add('is-on');
+      var cat = b.getAttribute('data-cat');
+      var cards = document.querySelectorAll('#jdmryVideoGrid .jdmry-vcard');
+      var shown = 0;
+      cards.forEach(function(c){
+        var ok = (cat === 'all' || c.getAttribute('data-cat') === cat);
+        c.style.display = ok ? '' : 'none';
+        if(ok) shown++;
+      });
+      showToast('已筛选「' + b.textContent + '」共 ' + shown + ' 部作品');
+    });
+  }
+
+  /* 数字滚动 */
+  function runCount(el){
+    var target = parseInt(el.getAttribute('data-count'), 10) || 0;
+    var start = null, dur = 1200;
+    function step(ts){
+      if(!start) start = ts;
+      var p = Math.min((ts - start) / dur, 1);
+      var val = Math.floor(target * (1 - Math.pow(1 - p, 3)));
+      el.textContent = val.toLocaleString('en-US');
+      if(p < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString('en-US');
+    }
+    requestAnimationFrame(step);
+  }
+  var statEls = document.querySelectorAll('.jdmry-hero-stat b[data-count]');
+  if('IntersectionObserver' in window && statEls.length){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          runCount(en.target);
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:.4});
+    statEls.forEach(function(el){ io.observe(el); });
+  } else {
+    statEls.forEach(function(el){ el.textContent = el.getAttribute('data-count'); });
+  }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('jdmryTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 560) topBtn.classList.add('show');
+    else topBtn.classList.remove('show');
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 弹窗 */
+  var modal = document.getElementById('jdmryModal');
+  var modalContent = document.getElementById('jdmryModalContent');
+  var modalHTML = {
+    share: '<h3>分享果冻传媒孟若羽</h3><p>把这份影像清单分享给同好，让更多真实的故事被看见。</p>'+
+      '<div class="jdmry-share-row"><button type="button" onclick="jdmryCopyLink()">复制链接</button>'+
+      '<button type="button" onclick="jdmryShowToast(\'已生成微信分享卡片，请在微信中粘贴发送\')">微信</button>'+
+      '<button type="button" onclick="jdmryShowToast(\'已生成微博分享内容，可前往发布\')">微博</button>'+
+      '<button type="button" onclick="jdmryShowToast(\'已生成 QQ 分享卡片\')">QQ</button></div>'+
+      '<p style="color:#9a8a91;font-size:12.5px;margin:0">链接支持在浏览器中直接打开，作品页与专题页均可单独分享。</p>',
+    submit: '<h3>投稿入口</h3><p>填写作品基本信息，编辑团队将在五个工作日内回复你。</p>'+
+      '<input class="jdmry-modal-field" type="text" placeholder="作品名称（如：打铁巷的最后一个上午）">'+
+      '<input class="jdmry-modal-field" type="text" placeholder="创作者昵称与联系方式">'+
+      '<textarea class="jdmry-modal-field" placeholder="一句话介绍你的作品与拍摄动机"></textarea>'+
+      '<button class="jdmry-btn jdmry-btn-primary" style="width:100%;justify-content:center" type="button" onclick="jdmrySubmitDone()">提交投稿</button>',
+    report: '<h3>问题反馈</h3><p>播放异常、内容建议或体验问题，都可以写在这里。</p>'+
+      '<textarea class="jdmry-modal-field" placeholder="请描述你遇到的问题，附上设备与浏览器信息会更有帮助"></textarea>'+
+      '<button class="jdmry-btn jdmry-btn-primary" style="width:100%;justify-content:center" type="button" onclick="jdmrySubmitDone()">提交反馈</button>',
+    apply: '<h3>创作者入驻</h3><p>果冻传媒孟若羽长期开放创作者入驻，欢迎把你的作品与想法带过来。</p>'+
+      '<input class="jdmry-modal-field" type="text" placeholder="昵称">'+
+      '<input class="jdmry-modal-field" type="text" placeholder="擅长领域（如：人物纪录 / 城市探索）">'+
+      '<textarea class="jdmry-modal-field" placeholder="代表作与创作方向简述"></textarea>'+
+      '<button class="jdmry-btn jdmry-btn-primary" style="width:100%;justify-content:center" type="button" onclick="jdmrySubmitDone()">提交申请</button>'
+  };
+  window.jdmryOpenModal = function(type){
+    modalContent.innerHTML = modalHTML[type] || modalHTML.share;
+    modal.classList.add('show');
+  };
+  window.jdmryCloseModal = function(){
+    modal.classList.remove('show');
+  };
+  modal.addEventListener('click', function(e){
+    if(e.target === modal) jdmryCloseModal();
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') jdmryCloseModal();
+  });
+  window.jdmrySubmitDone = function(){
+    jdmryCloseModal();
+    showToast('已提交，官方团队会尽快与你联系');
+  };
+  window.jdmryCopyLink = function(){
+    var text = '果冻传媒孟若羽 - 品牌官方视频门户';
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast('链接已复制到剪贴板');
+      }).catch(function(){
+        showToast('复制失败，请手动选择文本复制');
+      });
+    } else {
+      showToast('当前浏览器不支持自动复制');
+    }
+  };
+
+  /* 卡片悬停轻反馈（键盘可达） */
+  document.querySelectorAll('.jdmry-vcard').forEach(function(c){
+    c.setAttribute('tabindex','0');
+    c.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){
+        var t = c.querySelector('h3');
+        if(t) showToast('打开作品：' + t.textContent);
+      }
+    });
+  });
+})();
+</script>
+</body>
+          </html>
